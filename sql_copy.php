@@ -36,7 +36,6 @@
 	    ";
 
 	mysqli_query($conn,$sql);
-	//echo ($uploaddir.$_FILES['userfile']['name']);
 
 	?>
 
