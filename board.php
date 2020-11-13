@@ -11,11 +11,12 @@
       <p><input type="submit" value="검색"></p>
   	 </form>
   	 <h1>강사명 목록</h1>
-   <?php
+	<?php
 	$conn = mysqli_connect("localhost","root","111111","minho",3306);
+
 	  
 	$sql="
-	SELECT * FROM semos2 WHERE center='{$_POST['center1']}'
+	SELECT * FROM semos2 WHERE center LIKE '%{$_POST['center1']}%'
 	";
 
 	$result=mysqli_query($conn,$sql);
